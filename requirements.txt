@@ -1,2 +1,14 @@
 fastapi
 uvicorn
+PyMuPDF
+reportlab
+fpdf
+PyMuPDF
+reportlab
+fpdf
+openai
+faiss-cpu
+tiktoken
+langchain
+python-dotenv
+unstructured
