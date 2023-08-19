@@ -9,10 +9,16 @@
   "routes": [
     { "src": "/(.*)", "dest": "api.py" }
   ],
+  {
   "functions": {
     "api.py": {
       "memory": 3008,
       "maxDuration": 30
+    },
+    "/*.py": {
+      "memory": 3008,
+      "maxDuration": 30
     }
   }
+}
 }
