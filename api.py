@@ -6,4 +6,4 @@ app = FastAPI()
 # Define a route for the root endpoint
 @app.get("/racingapi")
 async def read_root():
-    return {"allow": true}
+    return {"allow": True}
