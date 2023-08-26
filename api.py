@@ -6,4 +6,5 @@ app = FastAPI()
 # Define a route for the root endpoint
 @app.get("/")
 async def read_root():
-    return {"message": "Hello, World!"}
+    return {"username": "JYkAlGGbOQSAaInFFk6vQKnH",
+            "password": "Z0ucEe7ckXqLXfEeEPjOHjwh"}
