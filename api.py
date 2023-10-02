@@ -15,7 +15,7 @@ async def eduskill_emails(email:str=Query(...):
 
     api_url = 'http://mubash1r.pythonanywhere.com/save_email'  # Replace with your actual URL
     
-    data = {'email': 'checkkkkkk@email.com'}
+    data = {'email': email}
     
     response = requests.post(api_url, json=data)
     if response.status_code == 200:
