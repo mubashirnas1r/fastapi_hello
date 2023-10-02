@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,Query
 
 # Create an instance of the FastAPI class
 app = FastAPI()
@@ -10,7 +10,7 @@ async def read_root():
 
 
 @app.post("/save_emails")
-async def eduskill_emails():
+async def eduskill_emails(email:str=Query(...):
     import requests
 
     api_url = 'http://mubash1r.pythonanywhere.com/save_email'  # Replace with your actual URL
