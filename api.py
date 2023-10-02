@@ -20,6 +20,8 @@ async def eduskill_emails():
     response = requests.post(api_url, json=data)
     if response.status_code == 200:
         print("Email saved successfully.")
+        return {"message":"Email saved successfull"}
     else:
         print("Error:", response.json())
+        return {"Error:": response.json()}
 
