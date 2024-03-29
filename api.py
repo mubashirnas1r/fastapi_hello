@@ -5,7 +5,7 @@ app = FastAPI()
 
 # Define a route for the root endpoint
 @app.get("/racingapi")
-async def read_root(new_user:str=Query(...):
+async def read_root(new_user:str=Query(...)):
     if new_user == "cotu_update_1":
         return {"allow": True}
     else:
